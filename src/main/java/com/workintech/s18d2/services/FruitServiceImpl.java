@@ -24,7 +24,8 @@ public class FruitServiceImpl implements FruitService {
 
     @Override
     public Fruit getById(Long id) {
-        return fruitRepository.findById(id).orElseThrow(()->new PlantException("plant with given id is not exist:"+id , HttpStatus.SC_NOT_FOUND));
+        return fruitRepository.findById(id).orElseThrow(() -> new PlantException(
+                "plant with given id is not exist:" + id));
     }
 
     @Override

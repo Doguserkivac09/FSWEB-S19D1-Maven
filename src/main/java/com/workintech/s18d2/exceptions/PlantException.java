@@ -10,9 +10,9 @@ import org.apache.http.HttpStatus;
 @AllArgsConstructor
 public class PlantException extends RuntimeException{
 private HttpStatus httpStatus;
-public PlantException(String message ,HttpStatus  httpStatus){
+public PlantException(String message ){
     super(message);
-    this.httpStatus = httpStatus;
+
 }
 
 }
